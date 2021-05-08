@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>superchat</h1>
+      <h2>Superchat</h2>
       <SignOut/>
       </header>
 
@@ -86,8 +86,8 @@ function ChatRoom(){
 
     <form onSubmit={sendMessage}>
 
-    <input value={formValue} onChange={(e)=>setFormValue(e.target.value)} />
-    <button type='submit'> </button>
+    <input placeholder="Enter your text here" value={formValue} onChange={(e)=>setFormValue(e.target.value)} />
+    <button  type='submit'>Enter</button>
     </form>
     </>
 
